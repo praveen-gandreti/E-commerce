@@ -4,6 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 #### Deployed link [CLICK HERE TO VIEW APPLICATION EXECUTION](https://royal-collections.vercel.app)
 
+## DATA
+
+The data which is showing in template is taken from -> FAKE STORE API
+#### API link [CLICK HERE TO VIEW API DATA](https://fakestoreapi.com/products)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
