@@ -1,0 +1,31 @@
+<div *ngIf="!isEmpty">
+    <div class="a">
+        <div class="b">
+            <h1 class="b1">CART IS EMPTY</h1>
+            <a routerLink="/products" mat-raised-button class="b2">Continue Shopping</a>
+        </div>
+    </div>
+</div>
+<div class="ex" *ngIf="isEmpty">
+    <div class="x">
+        <div *ngFor="let i of products">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{i.title}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                        <div class="p-2 bd-highlight pic"><img mat-card-image src={{i.image}}></div>
+                        <div class="p-2 bd-highlight dis"><h2>{{i.description}}</h2></div>    
+                    </div>
+                </mat-card-content>
+                <p class="price">PRICE&nbsp;&nbsp;:&nbsp;&nbsp;{{i.price}}</p>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" class="bt" (click)="remove(i)">Remove</button>
+                    <button mat-raised-button color="primary" class="bt1" (click)="book(i)">Book Item</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+</div>

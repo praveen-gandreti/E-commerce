@@ -1,0 +1,18 @@
+<mat-toolbar class="tool1">
+    <h1 class="title">ROYAL COLLECTION</h1>
+ </mat-toolbar>
+ <mat-toolbar class="tool2">
+  <a  mat-raised-button routerLink="products" class="x">All Products</a>
+  <div *ngIf="!isLoggedIn">
+    <a mat-raised-button routerLink="/products" (click)="send()" routerLinkActive='active' [queryParams]="{'category':'men'}" class="x">Men</a>
+  <a mat-raised-button routerLink="/products" (click)="send()" routerLinkActive='active' [queryParams]="{'category':'women'}" class="x">Women</a>
+  <a mat-raised-button routerLink="/products" (click)="send()" routerLinkActive='active' [queryParams]="{'category':'electronics'}" class="x">Electronics</a>
+  <a mat-raised-button routerLink="/products" (click)="send()" routerLinkActive='active' [queryParams]="{'category':'jewelery'}" class="x">Jewelery</a>
+  </div>
+  <span class="example-spacer"></span>
+  <button mat-raised-button *ngIf="!isLoggedIn" class="x" (click)="logout()">Logout</button>
+  <a routerLink="/cart" mat-mini-fab aria-label="Example icon button with a delete icon" *ngIf="!isLoggedIn">
+    <mat-icon class="y">shopping_cart</mat-icon>
+  </a>
+ </mat-toolbar>
+<router-outlet></router-outlet>

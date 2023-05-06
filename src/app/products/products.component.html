@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div *ngFor="let i of items">
+            <mat-card class="x">
+                <mat-card-header> <mat-card-title>{{i.title}}</mat-card-title></mat-card-header>
+                <img mat-card-image src={{i.image}} alt="Photo of a Shiba Inu">
+                <mat-card-content><p class="price">PRICE&nbsp;&nbsp;:&nbsp;&nbsp;{{i.price}}</p></mat-card-content>
+                <mat-card-actions>
+                   <div style="font-size:xx-large;color: rgb(251, 255, 7);" class="rating">
+                    <ngb-rating  [(rate)]="i.rating.rate" [max]="5" [readonly]="true"> </ngb-rating>
+                   </div>  
+                </mat-card-actions>
+                <mat-card-footer>
+                    <button mat-raised-button color="accent" (click)="addCart(i)">ADD TO CART</button>
+                    <button mat-raised-button color="primary" class="btn" (click)="book(i)">BOOK NOW</button>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+    </div>
+</body>
+</html>
