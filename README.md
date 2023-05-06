@@ -16,7 +16,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Deployement Platform
 
-This application is deployed in vercel you acn view the "FRONT END" of the application but you can't perform any funcationality because JSON SERVER is not deployed yet in any platform
+This application is deployed in vercel you can view the "FRONT END" of the application but you can't perform any functionality because JSON SERVER is not deployed yet in any platform or server
 
 ## Code scaffolding
 
