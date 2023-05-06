@@ -2,11 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-#### Deployed link [CLICK HERE TO VIEW APPLICATION EXECUTION](https://royal-collections.vercel.app)
+#### Deployment link [CLICK HERE TO VIEW APPLICATION EXECUTION](https://royal-collections.vercel.app)
 
 ## DATA
 
-The data which is showing in template is taken from -> FAKE STORE API
+Products data which is showing in template is taken from -> FAKE STORE API
 #### API link [CLICK HERE TO VIEW API DATA](https://fakestoreapi.com/products)
 
 
